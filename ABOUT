@@ -1,0 +1,1 @@
+ffmpeg -loop 1 -i image.jpg -i music.mp3 -c:v libx265 -c:a aac -strict experimental -b:a 320k -shortest -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4 
